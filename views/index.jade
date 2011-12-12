@@ -1,0 +1,36 @@
+!!!
+head
+	link(rel='stylesheet', href='/css/reset.css', type='text/css')
+	link(rel='stylesheet', href='/css/index.css', type='text/css')
+	
+	script(src='/js/vendor/jquery-1.6.2.js')
+	script(src='/socket.io/socket.io.js')
+	script(src='/js/index.js')
+	
+	script
+		init();
+	
+body
+	div#container
+		div#login
+			form#chooseNick
+				label(for='nick') Choose a nickname
+				input#nick(name='nick')
+				label(for='room') Choose a room
+				select#room(name='room')
+					option(value='room1') room1
+					option(value='room2') room2
+				div
+					button#join Join
+					
+		div#chat
+			div#messagesHeader.header Messages
+			div#roomControl.header 
+				span#roomName Room Name
+				button#leave Leave Room
+			div#messages
+			ul#connected
+			form#controls
+				input#message(type='text')
+				button#send-message Submit
+			div#clientId

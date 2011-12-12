@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="/css/index.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="/js/vendor/jquery-1.6.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="login">
+			<form id="chooseNick">
+				<label for="nick">Choose a nickname</label>
+				<input type="text" id="nick" name="nick" />
+				<label for="room">Choose a room</label>
+				<select name="room" id="room">
+					<option value="room1">room1</option>
+					<option value="room2">room2</option>
+				</select>
+				<button id="join">Join</button>
+			</form>
+		</div>
+	
+		<div id="chat">
+			<div id="messagesHeader" class="header">Messages</div>
+			<div id="roomName" class="header">Room Name</div>
+			<div id="messages">
+			</div>
+			<ul id="connected"></ul>
+			<form id="controls">
+				<input id="message" type="text" />
+				<button id="send-message">Submit</button>
+			</form>			
+		</div>
+	</div>
+	
+</body>
+</html>

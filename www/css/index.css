@@ -1,0 +1,88 @@
+div#container {
+	width: 100%;
+}
+
+div#login {
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid black;
+	background: gray;
+	width: 200px;
+}
+
+form#chooseNick label {
+	display: block;
+}
+
+div#chat {
+	border: 1px solid black;
+	width: 800px;
+	padding: 10px;
+	margin: 15px;
+	display: none;
+}
+
+div#messagesHeader, div#roomControl, div#messages, ul#connected {
+	float: left;
+}
+
+div#messagesHeader, div#messages {
+	width: 598px;
+}
+
+div#roomControl, ul#connected {
+	width: 198px;
+}
+
+form#controls {
+	border: 1px solid red;
+	clear: both;
+}
+
+div#messages, ul#connected {
+	border: 1px dotted gray;
+	height: 400px;
+}
+
+div#messages {
+	overflow: auto;
+}
+
+div#messages p {
+	padding: 5px 0;
+}
+
+div#messages span {
+	padding: 3px;
+}
+
+div#messages span.nick {
+	background: red;
+	color: white;
+	font-weight: bold;
+}
+
+div#messages span.me {
+	background: blue;
+}
+
+div#messages span.notification {
+	color: gray;
+	font-style: italic;
+	font-size: 75%;
+}
+
+div#chat div.header {
+	margin: 1px;
+}
+
+input#message {
+	width: 700px;
+}
+
+form#controls button#send-message {
+	margin: 0 12px;
+	padding: 0;
+	width: 68px;
+}
